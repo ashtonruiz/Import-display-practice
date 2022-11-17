@@ -1,0 +1,65 @@
+#movies-header {
+    text-decoration: underline;
+}
+
+#movie-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center space-evenly;
+    flex-wrap: wrap;
+    align-items: left;
+    padding: 5px;
+    border: 5px;
+    border-color: black;
+}
+
+#plants-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+#plants-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 5px;
+    border: 5px;
+    border-color: black;
+}
+
+#employees-header {
+    text-decoration: underline;
+}
+
+#employees-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center space-evenly;
+    flex-wrap: wrap;
+    align-items: left;
+    padding: 5px;
+    border: 5px;
+    border-color: black;
+}
+
+#cars-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+}
+
+#cars-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 5px;
+    border: 5px;
+    border-color: black;
+}
