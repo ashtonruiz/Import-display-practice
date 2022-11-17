@@ -1,9 +1,10 @@
 /* Imports */
-import { renderMovies } from './render-utils.js';
-import { fetchMovies } from './fetch-utils.js';
+import { renderMovies, renderPlants } from './render-utils.js';
+import { fetchMovies, fetchPlants } from './fetch-utils.js';
 
 /* Get DOM Elements */
 const moviesContainer = document.getElementById('movie-list');
+const plantsContainer = document.getElementById('plants-list');
 
 /* Events */
 window.addEventListener('load', async () => {
@@ -14,6 +15,15 @@ window.addEventListener('load', async () => {
     }
 });
 
+window.addEventListener('load', async () => {
+    const plants = await fetchPlants();
+    for (let plant of plants) {
+        const plantEl = renderPlants(plant);
+        plantsContainer.append(plantEl);
+    }
+});
 /* Display Functions */
+
+// window.addEventListener('load', async () => {
 
 // (don't forget to call any display functions you want to run on page load!)
