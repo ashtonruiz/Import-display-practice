@@ -39,3 +39,16 @@ export function renderEmployees(employees) {
     div.append(h2, p);
     return div;
 }
+
+export function renderCars(cars) {
+    const div = document.createElement('div');
+
+    const h2 = document.createElement('h2');
+    h2.textContent = cars.vin;
+
+    const p = document.createElement('p');
+    p.textContent = cars.color;
+
+    div.append(h2, p);
+    return div;
+}

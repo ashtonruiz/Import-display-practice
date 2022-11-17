@@ -18,3 +18,8 @@ export async function fetchEmployees() {
     const response = await client.from('employees').select();
     return response.data;
 }
+
+export async function fetchCars() {
+    const response = await client.from('cars').select();
+    return response.data;
+}

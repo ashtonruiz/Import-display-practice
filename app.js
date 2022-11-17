@@ -1,6 +1,6 @@
 /* Imports */
-import { renderMovies, renderPlants, renderEmployees } from './render-utils.js';
-import { fetchMovies, fetchPlants, fetchEmployees } from './fetch-utils.js';
+import { renderMovies, renderPlants, renderEmployees, renderCars } from './render-utils.js';
+import { fetchMovies, fetchPlants, fetchEmployees, fetchCars } from './fetch-utils.js';
 
 /* Get DOM Elements */
 const moviesContainer = document.getElementById('movie-list');
@@ -30,6 +30,14 @@ window.addEventListener('load', async () => {
     for (let employee of employees) {
         const employeesEl = renderEmployees(employee);
         employeesContainer.append(employeesEl);
+    }
+});
+
+window.addEventListener('load', async () => {
+    const cars = await fetchCars();
+    for (let car of cars) {
+        const carsEl = renderCars(car);
+        carsContainer.append(carsEl);
     }
 });
 
