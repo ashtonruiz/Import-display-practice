@@ -22,4 +22,20 @@ export function renderPlants(plants) {
 
     const p = document.createElement('p');
     p.textContent = plants.family;
+
+    div.append(h1, h2, p);
+    return div;
+}
+
+export function renderEmployees(employees) {
+    const div = document.createElement('div');
+
+    const h2 = document.createElement('h2');
+    h2.textContent = employees.email;
+
+    const p = document.createElement('p');
+    p.textContent = employees.first_name;
+
+    div.append(h2, p);
+    return div;
 }

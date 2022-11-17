@@ -13,3 +13,8 @@ export async function fetchPlants() {
     const response = await client.from('plants').select();
     return response.data;
 }
+
+export async function fetchEmployees() {
+    const response = await client.from('employees').select();
+    return response.data;
+}
